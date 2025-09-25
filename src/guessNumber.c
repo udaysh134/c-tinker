@@ -3,9 +3,13 @@
 #include <windows.h>
 #include <time.h>
 #include <ctype.h>
+#include <conio.h>
 
 void welcomeInput ();
 void getPlayers();
+
+char lineBreakThick[50] = "========================================";
+char lineBreakThin[50] = "----------------------------------------";
 
 
 int main () {
@@ -44,9 +48,6 @@ int main () {
 
 
 void welcomeInput () {
-    char lineBreakThick[50] = "========================================";
-    char lineBreakThin[50] = "----------------------------------------";
-
     system("cls");
     printf("Welcome to the NUMBER GUESSING GAME\n%s", lineBreakThick);
     Sleep(2000);
@@ -61,10 +62,8 @@ void welcomeInput () {
     Sleep(1000);
 
     getPlayers();
-    Sleep(3000);
 
-    printf("\n%s", lineBreakThin);
-    printf("\nOkay, let's start!!");
+    printf("Okay, let's start!!");
     Sleep(500);
 
     printf("\n3");
@@ -83,12 +82,12 @@ struct players {
 };
 
 void getPlayers() {
-    char lineBreakThick[50] = "========================================";
-    char lineBreakThin[50] = "----------------------------------------";
-
     int players;
     char namingChoice;
-    char nameOfPlayer[20];
+    char nameIfYes[20];
+    char nameIfNo[20];
+
+    struct players pl[10];
 
     askNoOfPlayers:
     printf("\n> Enter the number of players... ");
@@ -102,8 +101,6 @@ void getPlayers() {
         goto askNoOfPlayers;
     } else if (players < 11 && players > 0) {
         for (int i = 1; i < (players + 1); i++) {
-            struct players pl[10];
-
             askNameOfPlayers:
 
             printf("\nWould you like to name Player_%d? (Y/N) : ", i);
@@ -112,22 +109,42 @@ void getPlayers() {
             switch (tolower(namingChoice)) {
                 case 'y':
                         printf("Give a name to Player_%d : ", i);
-                        getchar();
-                        fgets(nameOfPlayer, sizeof(nameOfPlayer), stdin);
-                        printf("%s\nOkay, the name of Player_%d will be - %s", lineBreakThin, i, nameOfPlayer);
+                        fflush(stdin);
+                        fgets(nameIfYes, sizeof(nameIfYes), stdin);
+                        nameIfYes[strcspn(nameIfYes, "\n")] = 0;
+
+                        printf("Okay, the name of Player_%d will be - %s\n%s", i, nameIfYes, lineBreakThin);
 
                         pl[i-1].number = i;
-                        strcpy(pl[i-1].name, nameOfPlayer);
+                        strcpy(pl[i-1].name, nameIfYes);
                     break;
                 case 'n':
-                        printf("%s\nOkay, the name of the Player_%d will be - Player_%d",lineBreakThin, i, i);
+                        sprintf(nameIfNo, "Player_%d", i);
+                        printf("Okay, the name of the Player_%d will be - Player_%d\n%s", i, i, lineBreakThin);
+
+                        pl[i-1].number = i;
+                        strcpy(pl[i-1].name, nameIfNo);
                     break;
                 default:
                         printf("Oops! You didn't gave a valid input. Please try again, only use Y or N!");
                         goto askNameOfPlayers;
                     break;
             }
-        }        
+        }
+        
+        Sleep(3000);
+        printf("\n%s%s\n", lineBreakThick, lineBreakThick);
+        printf("Number of players joining this session are :\n\n");
+
+        for (int i = 0; i < players; i++) {
+            printf("%d. %s\n", pl[i].number, pl[i].name);
+        }
+
+        printf("\n%s%s\n", lineBreakThick, lineBreakThick);
+        printf("Press enter when you're ready...");
+
+        fflush(stdin);
+        getchar();
     } else {
         printf("Oops!! An error occured, you gave an invalid input.");
     }
