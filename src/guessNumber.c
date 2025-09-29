@@ -23,7 +23,7 @@ int main () {
     printf("Guess the number : ");
     scanf("%d", &guessedNum);
 
-    do {
+    while(guessedNum != randomGenerated) {
         if (guessedNum < randomGenerated) {
             guesses++;
             printf("Wrong | Guess a little higher : ");
@@ -43,7 +43,7 @@ int main () {
             printf("Right | You guessed it (%d) and defeated me in %d guesses.", randomGenerated, guesses);
             printf("\n\nThanks for playing the Game!!\nHope you enjoyed!! See yo again!!");
         }
-    } while (guessedNum != randomGenerated);
+    }
 }
 
 
