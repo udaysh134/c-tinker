@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include <conio.h>
 
-void welcomeInput ();
+void welcomeInput();
 void getPlayers();
 
 char lineBreakThick[50] = "========================================";
