@@ -10,6 +10,7 @@ int main() {
     printf("Enter three numbers: ");
     scanf("%d %d %d", &a, &b, &c);
 
+    // Comparing one value with another to find which one's greater
     if (a > b && a > c) {
         printf("%d is the greatest.\n", a);
     } else if (b > a && b > c) {
