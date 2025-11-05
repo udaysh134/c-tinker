@@ -1,3 +1,12 @@
+/**
+ * -----------------------------------------------------------------------------
+ * Program : guessNum.c
+ * Purpose : Play a Guessing Game with multi-player functionality
+ * Authors : [Uday]
+ * Date : Nov 05, 2025
+ * -----------------------------------------------------------------------------
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
@@ -12,8 +21,13 @@ char lineBreakThick[50] = "========================================";
 char lineBreakThin[50] = "----------------------------------------";
 
 
+/*
+----------------------------------------------------------------------------------------------------
+MAIN FUNCTION
+----------------------------------------------------------------------------------------------------
+*/
 int main () {
-    srand(time(NULL));
+    srand(time(NULL)); // Setting a random seed number using current time
     welcomeInput();
 
     int randomGenerated = rand() % 100 + 1;
@@ -23,13 +37,15 @@ int main () {
     printf("Guess the number : ");
     scanf("%d", &guessedNum);
 
+
+    // Loop to keep asking for the correct input
     while(guessedNum != randomGenerated) {
         if (guessedNum < randomGenerated) {
             guesses++;
             printf("Wrong | Guess a little higher : ");
             scanf("%d", &guessedNum);
         }
-        
+
         if (guessedNum > randomGenerated) {
             guesses++;
             printf("Wrong | Guess a little lower : ");
@@ -47,6 +63,11 @@ int main () {
 }
 
 
+/*
+----------------------------------------------------------------------------------------------------
+OTHER FUNCTIONS
+----------------------------------------------------------------------------------------------------
+*/
 void welcomeInput () {
     system("cls");
     printf("Welcome to the NUMBER GUESSING GAME\n%s", lineBreakThick);
@@ -93,6 +114,7 @@ void getPlayers() {
     printf("\n> Enter the number of players... ");
     scanf("%d", &players);
 
+    // Asking number of players from teh user
     if(players == 0 || players < 0) {
         printf("Please provide a valid value. The game cannot begin if there's no one to play!");
         goto askNoOfPlayers;
@@ -106,6 +128,7 @@ void getPlayers() {
             printf("\nWould you like to name Player_%d? (Y/N) : ", i);
             scanf(" %c", &namingChoice);
 
+            // Naming of players starts from here
             switch (tolower(namingChoice)) {
                 case 'y':
                         printf("Give a name to Player_%d : ", i);
