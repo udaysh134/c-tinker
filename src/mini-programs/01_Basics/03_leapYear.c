@@ -24,7 +24,7 @@ int main() {
         printf("%d is not a leap year.\n", year);
     }
 
-    // A leap year happens every 4 years — except if it’s a century (like 1900), unless it’s divisible by 400 (like 2000).
+    // A leap year happens every 4 years - except if it’s a century (like 1900), unless it’s divisible by 400 (like 2000).
 
     return 0;
 }
