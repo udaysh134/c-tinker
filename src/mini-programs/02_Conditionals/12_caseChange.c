@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 11_caseChange.c
+ * Program : 12_caseChange.c
  * Purpose : Convert a Lower case character to an Upper case and vice-versa
  * Authors : [Uday]
  * Date : Nov 08, 2025

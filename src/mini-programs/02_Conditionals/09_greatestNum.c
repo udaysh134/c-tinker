@@ -1,9 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 02_greatestNum.c
+ * Program : 09_greatestNum.c
  * Purpose : Find the greatest number among three provided ones
  * Authors : [Uday]
- * Date : Nov 05, 2025
+ * Date : Nov 07, 2025
  * -----------------------------------------------------------------------------
  */
 

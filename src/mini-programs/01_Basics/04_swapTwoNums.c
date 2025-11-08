@@ -1,9 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 06_swapTwoNums.c
+ * Program : 04_swapTwoNums.c
  * Purpose : Swap two numbers without using a third variable as a container
  * Authors : [Uday]
- * Date : Nov 05, 2025
+ * Date : Nov 06, 2025
  * -----------------------------------------------------------------------------
  */
 

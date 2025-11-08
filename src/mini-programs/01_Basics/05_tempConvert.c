@@ -1,9 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 09_tempConvert.c
+ * Program : 05_tempConvert.c
  * Purpose : Convert temperature from Celcius to Fahrenheit
  * Authors : [Uday]
- * Date : Nov 07, 2025
+ * Date : Nov 06, 2025
  * -----------------------------------------------------------------------------
  */
 

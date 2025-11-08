@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 05_sumFirstLast.c
+ * Program : 03_sumFirstLast.c
  * Purpose : Do the summation of first and the last digit of a 4-digit number
  * Authors : [Uday]
  * Date : Nov 05, 2025

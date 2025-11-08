@@ -1,9 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 07_remFiveDigit.c
+ * Program : 01_remOfNum.c
  * Purpose : Get the remainder of a 5-digit number after dividing it by 3
  * Authors : [Uday]
- * Date : Nov 07, 2025
+ * Date : Nov 05, 2025
  * -----------------------------------------------------------------------------
  */
 

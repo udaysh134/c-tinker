@@ -1,9 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 03_leapYear.c
+ * Program : 10_leapYear.c
  * Purpose : Check if a year is a Leap Year or not
  * Authors : [Uday]
- * Date : Nov 05, 2025
+ * Date : Nov 08, 2025
  * -----------------------------------------------------------------------------
  */
 

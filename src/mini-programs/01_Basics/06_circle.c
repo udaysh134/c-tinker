@@ -1,9 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 01_circle.c
+ * Program : 06_circle.c
  * Purpose : Calculate the area and circumference of a circle
  * Authors : [Uday]
- * Date : Nov 05, 2025
+ * Date : Nov 06, 2025
  * -----------------------------------------------------------------------------
  */
 

@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 10_vowelConsonant.c
+ * Program : 11_vowelConsonant.c
  * Purpose : Check if an inputted character is a Vowel or a Consonant
  * Authors : [Uday]
  * Date : Nov 08, 2025

@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 08_simCompInterest.c
+ * Program : 07_simCompInterest.c
  * Purpose : Find out Simple & Compound Interest with the given data
  * Authors : [Uday]
  * Date : Nov 07, 2025

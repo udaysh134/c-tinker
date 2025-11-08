@@ -1,9 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 12_marksPercentage.c
+ * Program : 02_marksPercentage.c
  * Purpose : Calculate the Total Marks and Percentage obtained from the provided scores
  * Authors : [Uday]
- * Date : Nov 08, 2025
+ * Date : Nov 05, 2025
  * -----------------------------------------------------------------------------
  */
 
