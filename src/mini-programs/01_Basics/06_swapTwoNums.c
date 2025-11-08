@@ -20,6 +20,10 @@ int main() {
     b = a - b;
     a = a - b;
 
+    // Step 1: Add both numbers and store result in 'a'
+    // Step 2: Subtract 'b' from new 'a' to get old value of 'a'
+    // Step 3: Subtract new 'b' from 'a' to get old value of 'b'
+
     printf("After swapping: a = %d, b = %d\n", a, b);
     return 0;
 }
