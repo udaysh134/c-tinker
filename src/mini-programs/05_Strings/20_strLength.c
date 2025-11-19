@@ -3,7 +3,7 @@
  * Program : 20_strLength.c
  * Purpose : Find the length of a string without using any library function.
  * Authors : [Uday]
- * Date : 
+ * Date : Nov 19, 2025
  * -----------------------------------------------------------------------------
  */
 
