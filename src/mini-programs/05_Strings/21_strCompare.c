@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 21_strCompare.c
+ * Program : 22_strCompare.c
  * Purpose : Compare two strings if they're same or not, without using any library function
  * Authors : [Uday]
  * Date : Nov 19, 2025

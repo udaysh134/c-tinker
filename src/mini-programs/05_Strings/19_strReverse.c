@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 19_strReverse.c
+ * Program : 20_strReverse.c
  * Purpose : Reverse the content of a string using library function.
  * Authors : [Uday]
  * Date : Nov 17, 2025

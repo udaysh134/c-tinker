@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 17_smallestElement.c
+ * Program : 18_smallestElement.c
  * Purpose : Find the smallest element in an array of integers
  * Authors : [Uday]
  * Date : Nov 11, 2025

@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 22_palindrome.c
+ * Program : 23_palindrome.c
  * Purpose : Check if the inputted string and the integer follows Palindrome structure or not
  * Authors : [Uday]
  * Date : Nov 19, 2025

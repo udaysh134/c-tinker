@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
- * Program : 20_strLength.c
+ * Program : 21_strLength.c
  * Purpose : Find the length of a string without using any library function.
  * Authors : [Uday]
  * Date : Nov 19, 2025
